@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Top Start */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: #FEF7F6;
+}
+.header-top-contact span{
+    padding: 0 10px;
+    color: #454545;
+    font-weight: 300;
+}
+.header-top-menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    font-weight: 300;
+}
+.header-top-menu a{
+    color: #454545;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.header-top-menu li a{
+    position: relative;
+}
+.header-top-dropdown-item{
+    position: absolute;
+    background-color: #FEF7F6;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+.header-top-dropdown-item li{
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-top-dropdown-item li a:hover{
+    color: coral;
+}
+.header-top-menu li:hover .header-top-dropdown-item{
+    display: block;
+}
+/* Header Top End */
+/* Header Main Nav Start */
+#navbar{
+    background-color: #ffff;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #FFFF;
+}
+.main-navbar li{
+    display: inline-flex;
+    padding: 0 10px;
+    list-style: none;
+}
+.main-navbar li a{
+    text-decoration: none;
+    color: coral;
+    font-weight: 300;
+}
+.main-navbar li a:hover{
+    color: #454545;
+}
+/* Header Main Nav End */
+/* Banner section Start */
+#main-banner{
+    background-image: url(images/bg-1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-image img{
+    display: block;
+    width: 100%;
+    height: 430px;
+    vertical-align: middle;
+    border-style: none;
+  }
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content h3{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.banner-content h1{
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.btn-default{
+    text-decoration: none;
+    color: #FFFF;
+    padding: 20px 60px;
+    background-color: #FF5353;
+    border-radius: 10px;
+}
+.banner-content a:hover{
+    background-color: #FFFF;
+    color: coral;  
+}
+/* Banner section End */
+/* featured section start */
+.featured-h3{
+    text-align: center;
+    color: coral;
+    font-size: 36px;
+    padding: 30px;
+}
+.featured-item-span-title{
+    color: #454545;
+    font-size: 20px;
+    font-weight: 300;
+}
+.featured-item-span-title:hover{
+    color: coral;
+}
+.fa-star{
+    color:rgb(233, 190, 137);
+}
+.checked {
+    color: orange;
+}
+.featured-item-price{
+    font-size: 12px;
+    padding: 5px;
+    color: red;
+}
+.featured-items-content{
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featured-items{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+/* featured section start */
+/* Discount section start */
+#discount{
+    background-color: #EAE2D8;
+    display: flex;
+    justify-content: space-evenly;
+}
+.discount-50 span{
+    font-family: 'Dancing Script', cursive;
+    color: coral;
+    font-size: 60px;
+    font-weight: 700;
+}
+.discount-span{
+    font-size: 24px;
+    font-weight: 300;
+}
+.discount-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+}   
+.btn-2{
+    text-decoration: none;
+    color: #FFFF;
+    padding: 20px 60px;
+    background-color: #FF5353;
+    border-radius: 10px;
+}
+.btn-2:hover{
+    background-color: #FFFF;
+    color: coral;
+}
+.discount-image img{
+    display: block;
+    width: 100%;
+    height: 430px;
+    vertical-align: middle;
+    border-style: none;
+}
+/* Discount section end */
+/* Populer items start */
+.populer-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+/* Populer items end */
+/* Service section starts */
+.service-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    line-height: 1.5;
+}
+.common-box{
+    border: 1px solid #ebeef0;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+}
+.service-container img{
+    padding: 10px;
+}
+.service-container p{
+    color: #454545;
+}
+/* Service section starts */
+/* Trending section start */
+#trending{
+    margin: 0 20px;
+}
+.trending-header{
+    text-align: center;
+    padding: 50px;
+    font-size: 36px;
+    color: coral;
+}
+.trending-items-container-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.trending-items-container-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Trending section end */
+/* Blog post section start*/
+.blog-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 40px;
+    padding: 0;
+    
+}
+.blog-header{
+    margin: 20px;
+    color: coral;
+}
+.blog-header h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 10px;
+    
+}
+.blog-content{
+    display: flex;
+}
+.blog-post-image{
+    vertical-align: middle;
+}
+.blog-post{
+    margin: 10px;
+}
+.blog-post-date{
+    margin: 10px 0;
+}
+.blog-post-date a{
+    color: #454545;
+    text-decoration: none;
+}
+.blog-post-date a:hover{
+    color: coral;
+}
+.fa-calendar{
+    padding: 0 5px;
+}
+.fa-cube{
+    color: red;
+}
+.fa-comments{
+    color: burlywood;
+}
+.blog-post-title a{
+    color: #454545;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+} 
+.blog-post-title a:hover{
+    color: coral;
+} 
+.blog-catagory a{
+    color: #454545;
+    text-decoration: none; 
+}
+.blog-catagory a:hover{
+    color: coral;
+}
+.blog-post-footer{
+    display: inline-flex;
+    margin: 10px;
+    border-top: .5px solid #454545;
+    padding-top: 10px;
+}
+.blog-comment a{
+    color: #454545;
+    text-decoration: none; 
+    padding: 0 15px;
+    
+}
+.blog-comment a:hover{
+    color: coral;
+}
+/* Blog post section end*/
+/* social section start*/
+.social-header h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: coral;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.social-icon a i{
+    font-size: 50px;
+    color: skyblue;
+    transition: 0.03;
+}
+.social-icon a i:hover{
+    font-size: 58px;
+    color: coral;
+}
+/* social section end*/
+/* Footer section start */
+#footer{
+    margin: 30px 0;
+    background-color: #EAE2D8;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-sec-title{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #454545;
+    padding: 5px 0;
+}
+.footer-menu a:hover{
+   color: coral;
+}
+.app-title h5{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.app-btn{
+    display: flex;
+}
+.android{
+    margin: 10px;
+}
+.apple{
+    margin: 10px;
+}
+.android a{
+    padding: 15px 70px;
+    background-color: #FF5353;
+    border-radius: 10px;
+}
+.android a:hover{
+    background-color: rgb(234, 111, 111);
+}
+.fa-android{
+    font-size: 30px;
+    color: white;
+}
+.fa-android:hover{
+    color: black;
+}
+.apple a{
+    padding: 15px 70px;
+    background-color: #FF5353;
+    border-radius: 10px;
+}
+.apple a:hover{
+    background-color: rgb(234, 111, 111);
+}
+.fa-apple{
+    font-size: 30px;
+    color: white;
+}
+.fa-apple:hover{
+    color: black;
+}
+.app-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.social-btn a i{
+    color: coral;
+    font-size: 30px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.social-btn a i:hover{
+    color: black;
+}
+.copyright{
+    text-align: center;
+    color: #454545;
+    margin: 20px;
+}
+.copyright a{
+    text-decoration: none;
+    color: coral;
+}
+/* Footer section end */
+
+
+
+
+
